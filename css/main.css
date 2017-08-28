@@ -49,6 +49,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Responsive images base, put your images in a wrapper
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /*Here's where you would put your Google Fonts import*/
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:200,300,400,400i,600,700,900|Source+Serif+Pro:400,600,700');
 
