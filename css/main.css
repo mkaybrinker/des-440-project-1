@@ -57,7 +57,7 @@ img {
 }
 
 /*Here's where you would put your Google Fonts import*/
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:200,300,400,400i,600,700,900|Source+Serif+Pro:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand');
 
 
 /* BOX MODEL SETTING FOR ALL ELEMENTS BY DEFAULT
@@ -74,15 +74,93 @@ html {
 body {
   font-size: 16px; /* Base Size */
   /*Setting the base font family*/
-  font-family: "Source Sans Pro", Verdana, sans-serif;
+  font-family: "Quicksand", Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  color: #311C4B;
 }
 
 /*Here's a sample media query for you. This one is for desktop styles.*/
 /*@media only screen and (min-width: 960px) {
 
+}*/
+
+h1{
+  font-family: 'Fjalla One', sans-serif;
+  color: #EE534A;
+  font-size: 100pt;
+  text-align: center;
+
 }
+
+h2{
+  font-family: 'Fjalla One', sans-serif;
+  color: #EE534A;
+  font-size: 50pt;
+}
+
+h3{
+  font-family: 'Fjalla One', sans-serif;
+  color: #E5AB1A;
+  font-size: 50pt;
+}
+
+h4{
+  font-family: 'Quicksand', sans-serif;
+  color: #311C4B;
+  font-size: 16pt;
+  line-height:20pt;
+  text-align: center;
+}
+
+.header {
+  width: 700px;
+  margin: 0 auto;
+  background-color:white;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  text-align: center;
+}
+
+section.bluebg {
+  background-color: #C1DDD9;
+}
+.inner-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #C1DDD9;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: left;
+}
+
+.inner-wrapper2 {
+  width: 1200px;
+  margin: 0 auto;
+  background-color:white;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: right;
+}
+
+img {
+  position: relative;
+  width:600px;
+  height:600px;
+}
+
+.image1 {
+  float: left;
+  margin-right: 20px;
+
+}
+
+.image2 {
+  float: right;
+  margin-left: 20px;
+
+}
+
 
 /* ==========================================================================
    Helper classes
