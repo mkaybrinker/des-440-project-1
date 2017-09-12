@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <!-- This tells the browser that we're using the most modern character encoding.
+        This is especially important for special characters like ® or å. -->
+        <meta charset="utf-8">
+        <!-- This is your title tag. Shows up in the browser tab, and search results.
+        Often, for a multi-page site, we'd do something like "Name of Site | Name of Page" -->
+        <title></title>
+        <!-- This meta tag is what Google uses in the search results. Describe what the page is so people will click! -->
+        <meta name="description" content="">
+        <!-- This tells the browser not to zoom, and that our content should be the same width as the browser window.
+        CRUCIAL for responsive design. https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Here's a few icons. There's more you can do, but these will cover you in most cases.
+        https://en.wikipedia.org/wiki/Favicon
+        There are a lot of online generators to help you, here's one: http://www.favicon.cc
+        Start with a 180 x 180 png for the apple, but note that it will show up MUCH smaller as a favicon.
+        You may want to use Photoshop to optimize your favicon.
+        -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Our first stylesheet normalizes differences between browsers. It's from git.io/normalize -->
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <!-- This is a basic print stylesheet. It has a media query in it, so it will only be applied when people hit print.  -->
+        <link rel="stylesheet" href="css/print.css">
+        <!-- Here's our custom stylesheet. Open it up to add styles to your page. -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+        <!-- This pulls jQuery from Google's Content Delivery Network -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- This code checks for the existence of the jQuery object, if it doesn't exist, that means the line above failed,
+        Google's CDN is down. So, let's write a tag that pulls in our local jQuery instead. -->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <!-- Here's our own custom javascript file. We load jQuery first, so we can use the jQuery library in our code -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

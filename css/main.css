@@ -1,0 +1,105 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+/*This is some further normalization and base styles. */
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Responsive images base, put your images in a wrapper
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*Here's where you would put your Google Fonts import*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:200,300,400,400i,600,700,900|Source+Serif+Pro:400,600,700');
+
+
+/* BOX MODEL SETTING FOR ALL ELEMENTS BY DEFAULT
+THIS IS BETTER THAN DEFAULT, YOU SHOULD ALWAYS USE THIS:
+*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* END BOX MODEL SETTINGS */
+
+body {
+  font-size: 16px; /* Base Size */
+  /*Setting the base font family*/
+  font-family: "Source Sans Pro", Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Here's a sample media query for you. This one is for desktop styles.*/
+/*@media only screen and (min-width: 960px) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Use this clearfix class on the parent of floated elements to clear the float! */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
