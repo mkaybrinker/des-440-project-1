@@ -90,6 +90,8 @@ h1{
   color: #EE534A;
   font-size: 100pt;
   text-align: center;
+  padding:0;
+  margin:0;
 
 }
 
@@ -117,8 +119,8 @@ h4{
   width: 700px;
   margin: 0 auto;
   background-color:white;
-  padding-top: .25em;
-  padding-bottom: .25em;
+  padding-top: 0;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -145,8 +147,7 @@ section.bluebg {
 
 img {
   position: relative;
-  width:600px;
-  height:600px;
+  padding:0;
 }
 
 .image1 {
