@@ -106,12 +106,14 @@ h2{
   font-family: 'Fjalla One', sans-serif;
   color: #EE534A;
   font-size: 50pt;
+  margin:auto;
 }
 
 h3{
   font-family: 'Fjalla One', sans-serif;
   color: #E5AB1A;
   font-size: 50pt;
+  margin:auto;
 }
 
 h4{
@@ -130,12 +132,16 @@ h4{
   padding-bottom: 0;
   text-align: center;
 }
+.header.img-wrap {
+  width: 550px;
+  height: auto;
+}
 
 section.bluebg {
   background-color: #C1DDD9;
 }
 .inner-wrapper {
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
   background-color: #C1DDD9;
   padding-top: 3em;
@@ -144,7 +150,7 @@ section.bluebg {
 }
 
 .inner-wrapper2 {
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
   background-color:white;
   padding-top: 3em;
@@ -155,6 +161,8 @@ section.bluebg {
 img {
   position: relative;
   padding:0;
+  width: 100%;
+  height: auto;
 }
 
 .image1 {
