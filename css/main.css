@@ -158,13 +158,6 @@ section.bluebg {
   text-align: right;
 }
 
-img {
-  position: relative;
-  padding:0;
-  width: 100%;
-  height: auto;
-}
-
 .image1 {
   float: left;
   margin-right: 20px;
