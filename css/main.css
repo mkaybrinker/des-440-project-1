@@ -95,7 +95,7 @@ body {
 h1{
   font-family: 'Fjalla One', sans-serif;
   color: #EE534A;
-  font-size: 100pt;
+  font-size: 60pt;
   text-align: center;
   padding:0;
   margin:0;
@@ -107,6 +107,7 @@ h2{
   color: #EE534A;
   font-size: 50pt;
   margin:auto;
+  padding:0;
 }
 
 h3{
@@ -114,6 +115,7 @@ h3{
   color: #E5AB1A;
   font-size: 50pt;
   margin:auto;
+  padding:0;
 }
 
 h4{
@@ -125,40 +127,65 @@ h4{
 }
 
 .header {
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   background-color:white;
   padding-top: 0;
   padding-bottom: 0;
   text-align: center;
 }
-.header.img-wrap {
-  width: 550px;
+.header .img-wrap {
+  max-width: 550px;
   height: auto;
+  margin: 0 auto;
 }
 
 section.bluebg {
   background-color: #C1DDD9;
 }
+
 .inner-wrapper {
-  width: 1000px;
+
   margin: 0 auto;
-  background-color: #C1DDD9;
+  /*background-color: #C1DDD9;*/
   padding-top: 3em;
   padding-bottom: 3em;
   text-align: left;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
-.inner-wrapper2 {
+.inner-wrapper .img-wrap {
+
+}
+.inner-wrapper .text-wrap {
+
+}
+
+/*DESKTOP STYLES*/
+@media only screen and (min-width: 768px) {
+  .inner-wrapper {
+    max-width: 1000px;
+    flex-flow: row nowrap;
+  }
+
+  .img-right {
+    order: 2;
+  }
+
+}
+
+/*.inner-wrapper2 {
   width: 1000px;
   margin: 0 auto;
   background-color:white;
   padding-top: 3em;
   padding-bottom: 3em;
   text-align: right;
-}
+}*/
 
-.image1 {
+/*.image1 {
   float: left;
   margin-right: 20px;
 
@@ -168,7 +195,9 @@ section.bluebg {
   float: right;
   margin-left: 20px;
 
-}
+}*/
+
+
 
 
 
