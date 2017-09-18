@@ -107,6 +107,7 @@ h2{
   color: #EE534A;
   font-size: 50pt;
   margin:auto;
+  line-height:10px;
   padding:0;
 }
 
@@ -115,6 +116,7 @@ h3{
   color: #E5AB1A;
   font-size: 50pt;
   margin:auto;
+  line-height:10px;
   padding:0;
 }
 
@@ -173,8 +175,10 @@ section.bluebg {
   .img-right {
     order: 2;
   }
-
+.img-wrap {
+  padding:5px;
 }
+
 
 /*.inner-wrapper2 {
   width: 1000px;
