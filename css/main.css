@@ -79,14 +79,13 @@ html {
 
 body {
 
-  font-size: 30px; /* Base Size */
+  font-size: 24px; /* Base Size */
   /*Setting the base font family*/
   font-family: "Quicksand", Verdana, sans-serif;
   font-weight:200;
   margin: 0;
-  padding: 0;
+  padding: ;
   color: #311C4B;
-
 }
 
 /*Here's a sample media query for you. This one is for desktop styles.*/
@@ -98,16 +97,14 @@ body {
 =======
 }*/
 
-
-}
 h1{
   font-family: 'Fjalla One', sans-serif;
   color: #EE534A;
   font-size: 60pt;
   text-align: center;
+  line-height: 125%;
   padding:0;
   margin:0;
-
 }
 
 h2{
@@ -116,7 +113,7 @@ h2{
   font-size: 50pt;
   margin:auto;
   padding:0;
-  line-height:50%;
+  line-height:125%;
 }
 
 h3{
@@ -124,7 +121,8 @@ h3{
   color: #E5AB1A;
   font-size: 50pt;
   margin:auto;
-  line-height:50%;
+  line-height:125%;
+  text-align:right;
 }
 
 h4{
@@ -134,12 +132,23 @@ h4{
   line-height:20pt;
   text-align: center;
   font-weight:500;
-
+  border:0;
+  padding:
+}
+h5{
+  font-size: 24px;
+  font-family: "Quicksand", Verdana, sans-serif;
+  font-weight:200;
+  margin: 0;
+  padding: ;
+  color: #311C4B;
+  text-align:right;
 }
 
 
+
 .header {
-  max-width: 600px;
+  max-width: 50%;
   margin: 0 auto;
   background-color:white;
   padding-top: 0em;
@@ -148,7 +157,7 @@ h4{
 
 }
 .header .img-wrap {
-  max-width: 550px;
+  max-width: 150%;
   height: auto;
   margin: 0 auto;
 }
@@ -175,13 +184,19 @@ section.bluebg {
   flex-flow: column nowrap;
   align-items: center;
 }
+.text-wrap{
+  padding:10px;
+}
+
 
 .inner-wrapper .img-wrap {
- flex: 1 1 33.333%;
+ flex: 1 1 50%;
 }
 .inner-wrapper .text-wrap {
-  flex: 1 1 66.666%;
+  flex: 1 1 50%;
 }
+
+
 
 
 
@@ -231,31 +246,68 @@ section.bluebg {
             filter: blur(0px);
     opacity: 1;
   }
-}
 
 
-/*.inner-wrapper2 {
-  width: 1000px;
-  margin: 0 auto;
-  background-color:white;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  text-align: right;
-}*/
+/*MOBILE STYLES*/
+  @media only screen and (max-width: 767px) {
+    h2{
+      text-align: center;
+      font-size-adjust: auto;
+    }
 
-/*.image1 {
-  float: left;
-  margin-right: 20px;
+    h3{
+      text-align: center;
+      font-size-adjust: auto;
+    }
 
-}
+    body{
+      text-align: center;
+      font-size:20px;
+      font-size-adjust: auto;
+    }
 
-.image2 {
-  float: right;
-  margin-left: 20px;
+    h4{
+      padding:.5em;
+      text-align: center;
+      font-size-adjust: auto;
+    } */
 
-}*/
+    .inner-wrapper {
+        align-content: center;
+      }
 
 
+@-webkit-keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
 
 
 
@@ -265,7 +317,7 @@ section.bluebg {
 
 /* Use this clearfix class on the parent of floated elements to clear the float! */
 
-.clearfix:before,
+/*.clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
@@ -289,55 +341,3 @@ section.bluebg {
  * animation puff-in-center
  * ----------------------------------------
  */
-
-
-/*MOBILE STYLES*/
-@media only screen and (max-width: 767px) {
-  h2{
-    text-align: center;
-    font-size-adjust: auto;
-  }
-  h3{
-    text-align: center;
-  }
-  p{
-    text-align: center;
-    font-size:28px;
-  }
-  h4{
-    padding:.5em;
-  }
-
-
-@-webkit-keyframes puff-in-center {
-  0% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes puff-in-center {
-  0% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
