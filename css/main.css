@@ -28,7 +28,9 @@ hr {
 audio,
 canvas,
 iframe,
-img,
+
+
+}
 svg,
 video {
     vertical-align: middle;
@@ -46,10 +48,7 @@ textarea {
 
 img {
   width: 100%;
-  height: auto;
-}
-.butt-img{
-  width:200%;
+  height: 300px;
 }
 
 
@@ -99,6 +98,8 @@ p{
   padding:0;
   margin:0;
 }
+
+
 
 
 
@@ -160,8 +161,9 @@ h5{
   color: #311C4B;
   text-align:center;
 }
+
  img{
-   max-width:100%;
+   max-width:200%;
    height: auto ;
  }
 
@@ -251,7 +253,7 @@ section.bluebg {
 }
 
 
-  h3{
+  h3, h5{
     text-align:right;
   }
 
@@ -259,7 +261,6 @@ section.bluebg {
     text-align: left;
   }
 
-}
 
 @-webkit-keyframes puff-in-center {
   0% {
