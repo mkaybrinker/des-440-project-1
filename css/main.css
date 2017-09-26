@@ -167,15 +167,17 @@ h5{
 }
 
 img{
-  max-width:150%
+  width:100%;
   padding:0;
   margin:0;
+  display:block;
+
 }
 
 
 
 section.header {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   background-color:white;
   padding-top: 0em;
@@ -184,9 +186,10 @@ section.header {
 
 }
 .header .img-wrap {
-  max-width: 100%;
+  max-width:75%;
   height: auto;
   margin: 0 auto;
+  align-items:center;
 }
 
 
@@ -216,13 +219,13 @@ section.bluebg {
   padding-bottom: 5em;
   padding-left: .5em;
   padding-right: .5em;
-
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 .text-wrap{
-  padding:40px;
+  padding-left:10px;
+  padding-right:10px;
 }
 
 
