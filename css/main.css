@@ -1,3 +1,6 @@
+/*Here's where you would put your Google Fonts import*/
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand');
+
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 /*This is some further normalization and base styles. */
 html {
@@ -64,9 +67,6 @@ img {
     height: auto;
 }
 
-/*Here's where you would put your Google Fonts import*/
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand');
-
 
 
 /* BOX MODEL SETTING FOR ALL ELEMENTS BY DEFAULT
@@ -87,7 +87,7 @@ body {
   font-weight:200;
   margin: 0;
   color: #311C4B;
-  padding:.5em;
+
 }
 
 
@@ -152,9 +152,7 @@ h4{
   line-height:20pt;
   text-align: center;
   font-weight:400;
-  border:0;
-  margin:15pt;
-  padding:.5em;
+
 }
 
 h5{
@@ -174,7 +172,10 @@ img{
 
 }
 
-
+section {
+  padding:0 0.5em;
+  overflow:hidden;
+}
 
 section.header {
   max-width: 100%;
@@ -186,7 +187,7 @@ section.header {
 
 }
 .header .img-wrap {
-  max-width:75%;
+  max-width: 1000px;
   height: auto;
   margin: 0 auto;
   align-items:center;
@@ -194,12 +195,11 @@ section.header {
 
 
 
-
-
 /*ANIMATIONS*/
 .puff.element-in, .puff-now {
 	-webkit-animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	        animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+          transform-origin:center center;
 }
 
 .fade-in {
@@ -231,6 +231,7 @@ section.bluebg {
 
 .inner-wrapper .img-wrap {
  flex: 1 1 50%;
+ overflow: hidden;
 }
 .inner-wrapper .text-wrap {
   flex: 1 1 50%;
@@ -276,27 +277,17 @@ h1{
     text-align: left;
   }
 
+section.header {
+    width:700px;
+  }
 
-@-webkit-keyframes puff-in-center {
-  0% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
+
+
+
 @keyframes puff-in-center {
   0% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
     -webkit-filter: blur(2px);
             filter: blur(2px);
     opacity: 0;
