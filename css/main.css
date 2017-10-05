@@ -278,7 +278,7 @@ h1{
   }
 
 section.header {
-    width:700px;
+    max-width:900px;
   }
 
 
