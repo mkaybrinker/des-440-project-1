@@ -51,7 +51,7 @@ textarea {
 
 img {
 
-  padding:0;
+  padding-bottom:0;
   margin:0;
 }
 
@@ -166,11 +166,15 @@ h5{
 
 img{
   width:100%;
-  padding:0;
+  padding-bottom:1em;
   margin:0;
   display:block;
-
 }
+
+/*img.kneadimg{
+ width:75%;
+}
+*/
 
 section {
   padding:0 0.5em;
@@ -284,7 +288,7 @@ section.header {
 
 
 
-@keyframes puff-in-center {
+/*@keyframes puff-in-center {
   0% {
     -webkit-transform: scale(1.8);
             transform: scale(1.8);
